@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 
@@ -8,8 +9,8 @@ export const Home = () => (
 		<p>
 			<img src={rigoImage} />
 		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
+		<Link to="/contact">
+			<button className="btn btn-success">Go to agenda</button>						
+		</Link>
 	</div>
 );
